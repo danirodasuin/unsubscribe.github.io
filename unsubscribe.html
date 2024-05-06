@@ -1,17 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desuscripción de Marketing</title>
+    <title>Desuscripción de newsletter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <h1>Desuscripción de Marketing</h1>
-    <p>Por favor, ingresa tu dirección de correo electrónico para desuscribirte de nuestros correos de marketing:</p>
-    <form action="procesar_desuscripcion.php" method="post">
-        <label for="email">Correo electrónico:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        <input type="submit" value="Desuscribirme">
-    </form>
+    <div class="container">
+        <img src="https://i.imgur.com/QVUX0GB.png" alt="Logo de la empresa">
+        <h1>Desuscripción de newsletter</h1>
+        <p>Estimado cliente, agradecemos tu interés en nuestros correos de marketing. Si deseas dejar de recibir nuestras comunicaciones, por favor ingresa tu dirección de correo electrónico a continuación:</p>
+        <form action="procesar_desuscripcion.php" method="post">
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <input type="submit" value="Desuscribirme">
+        </form>
+        <p>¡Gracias por tu atención y por ser parte de nuestra comunidad!</p>
+    </div>
 </body>
 </html>
